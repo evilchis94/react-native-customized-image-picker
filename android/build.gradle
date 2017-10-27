@@ -41,5 +41,5 @@ dependencies {
     compile 'com.facebook.fresco:fresco:0.12.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-    compile 'com.github.zetbaitsu:Compressor:d698334527'
+    compile 'com.github.zetbaitsu:Compressor:3124226bc5'
 }
