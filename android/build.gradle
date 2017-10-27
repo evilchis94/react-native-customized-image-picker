@@ -14,6 +14,9 @@ android {
     }
 }
 
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -21,8 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.0'
     compile 'com.facebook.react:react-native:+'
 
-    compile 'com.mg.RxCustomizedImagePicker:library:0.0.7'
-    //rxgalleryfinal依赖appcompat-v7和recyclerview-v7扩展卡库
+    compile 'com.github.kmorales13:RxGalleryFinal:master-SNAPSHOT'
     compile 'com.android.support:recyclerview-v7:24.2.0'
 
     compile 'com.squareup.picasso:picasso:2.5.2'
