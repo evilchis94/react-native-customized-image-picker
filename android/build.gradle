@@ -1,5 +1,9 @@
 apply plugin: 'com.android.library'
 
+def getRootExt(name, fallback) {
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : fallback
+}
+
 buildscript {
     repositories {
         mavenCentral()
@@ -10,12 +14,12 @@ buildscript {
 }
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "25.0.3"
+    compileSdkVersion getRootExt("compileSdkVersion", 25)
+    buildToolsVersion getRootExt("buildToolsVersion", "25.0.1")
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 24
+        targetSdkVersion getRootExt("targetSdkVersion", 23)
         versionCode 1
     }
     lintOptions {
